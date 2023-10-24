@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "511626921981",
+    "project_id": "cimatecmovie-1574f",
+    "storage_bucket": "cimatecmovie-1574f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511626921981:android:d2664e717145b70fb9fb94",
+        "android_client_info": {
+          "package_name": "com.example.cimatec_movie3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlWbO5emCAWx8MlFLlcClGiXCtve9WgE4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
