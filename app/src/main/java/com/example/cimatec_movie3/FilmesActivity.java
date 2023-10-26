@@ -1,7 +1,6 @@
 package com.example.cimatec_movie3;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -38,8 +37,6 @@ public class FilmesActivity extends AppCompatActivity {
             }
         });
 
-
-
         // Receba a matrícula da MainActivity
         String matricula = getIntent().getStringExtra("matricula");
 
@@ -66,8 +63,9 @@ public class FilmesActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent curtir = new Intent(getApplicationContext(), CurtirActivity.class);
-                String filme = filmesList.get(position).getId();
-                curtir.putExtra("id", filme);
+                // Obtenha a matrícula e o ID do filme
+                String idFilme = "filme" + (position + 1); // Considere que o ID seja "filmeX"
+                curtir.putExtra("id", idFilme);
                 curtir.putExtra("matricula", matricula);
                 startActivity(curtir);
             }

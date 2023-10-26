@@ -23,7 +23,7 @@ public class adicionarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adicionar);
 
-        txtNum = findViewById(R.id.editTxtNum);
+
         txtAno = findViewById(R.id.editTxtAno);
         txtNome = findViewById(R.id.editTxtNome);
         txtMat = findViewById(R.id.editTxtMat);
