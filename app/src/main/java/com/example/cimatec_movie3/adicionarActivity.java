@@ -1,6 +1,8 @@
 package com.example.cimatec_movie3;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +14,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class adicionarActivity extends AppCompatActivity {
     private Button button2;
+    private Button btnvoltar2;
     private EditText txtNum, txtNome, txtAno, txtMat;
     private DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
 
@@ -24,6 +27,16 @@ public class adicionarActivity extends AppCompatActivity {
         txtAno = findViewById(R.id.editTxtAno);
         txtNome = findViewById(R.id.editTxtNome);
         txtMat = findViewById(R.id.editTxtMat);
+        btnvoltar2 = findViewById(R.id.btnvoltar2);
+
+        btnvoltar2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         button2 = findViewById(R.id.button2);
 
@@ -52,7 +65,7 @@ public class adicionarActivity extends AppCompatActivity {
                         }
                     });
                 } else {
-                    // Trate o caso em que o campo está vazio, talvez exibindo uma mensagem de erro ao usuário.
+
                 }
             }
         });
